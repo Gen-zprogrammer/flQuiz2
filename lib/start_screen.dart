@@ -21,7 +21,7 @@ class StartScreen extends StatelessWidget {
           Text(
             'Quiz Pemrograman Mobile!',
             style: GoogleFonts.poppins(
-              color: const Color.fromARGB(255, 237, 223, 252),
+              color: const Color.fromARGB(150, 255, 255, 255),
               fontWeight: FontWeight.bold,
               fontSize: 20,
             ),
@@ -31,10 +31,10 @@ class StartScreen extends StatelessWidget {
             onPressed: startQuiz,
             style: OutlinedButton.styleFrom(
               backgroundColor: Colors.transparent,
-              foregroundColor: Colors.white,
+              foregroundColor: Color.fromARGB(150, 255, 255, 255),
             ),
             icon: const Icon(Icons.arrow_right_alt),
-            label: const Text('Kerjakan Quiz'),
+            label: const Text('Kerjakan Quiz', style: TextStyle(color: Color.fromARGB(150, 255, 255, 255),),),
           )
         ],
       ),

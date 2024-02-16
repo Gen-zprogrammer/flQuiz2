@@ -3,6 +3,7 @@ import 'package:fl_kuis/question_screen.dart';
 import 'package:fl_kuis/start_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:fl_kuis/result_screen.dart';
+
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
 
@@ -56,12 +57,10 @@ class _QuizState extends State<Quiz> {
       );
     }
 
-    return MaterialApp(
-      home: Scaffold(
-        body: Container(
-          color: Colors.amber,
-          child: screenWidget,
-        ),
+    return Scaffold(
+      body: Container(
+        color: Colors.amber,
+        child: screenWidget,
       ),
     );
   }
